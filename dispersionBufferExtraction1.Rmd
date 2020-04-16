@@ -1,0 +1,66 @@
+
+---
+title: "*Montastraea cavernosa* DNA extraction with dispersion buffer"
+author: "Alexis Sturm -- lexie.sturm@gmail.com"
+date: "4/10/2020"
+output:
+  html_document:
+    theme: paper
+    code_folding: hide
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+    keep_md: no
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+
+```{r, setup, include = FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+if (!require("pacman")) install.packages("pacman")
+
+pacman::p_load(kableExtra)
+
+
+```
+#### version: `r Sys.Date() %>% format(format="%B %d, %Y")`
+
+***
+#About this protocol
+We have found that this protocol works to extract high quantities and quality of DNA from *Montastraea cavernosa* tissue preserved in 100% molecular grade ethanol. A brief soak of the tissue scrape in TRIzol reagent appears to get rid of inhibitors and greatly improves DNA quality and downstream PCR amplification. This extraction protocol is relatively time consuming but may work well for people who are having trouble with their extractions (especially with pigmented pellets, poor downstream digestions, or amplification).
+
+This protocol is a Frakenstein mash-up of protocols published by [Ryan Eckert](https://ryaneckert.github.io/Belize_Mcav_Symbiodiniaceae_ITS2/lab_protocol/), which was modified from [Mieog et al. (2009)](https://doi.org/10.1111/j.1755-0998.2008.02222.x){target="_blank"} and [http://ccb.ucr.edu/lab_protocols.html](http://ccb.ucr.edu/lab_protocols.html){target="_blank"}, and protocols published by [Misha Matz](https://github.com/z0on/2bRAD_denovo).
+
+***
+#DNA extraction with dispersion buffer
+
+##Dispersion buffer recipe
+*Handle all the reagents under the fume hood, ESPECIALLY the beta-mercaptoethanol which is quite noxious
+
+**Recipe for making 50 mL of buffer:** <br>
+Guanadine thiocyanate: 23.632 g <br>
+Sodium citrate dihydrate: 0.441 g <br>
+β-mercaptoethanol: 105 μl <br>
+
+1.	Set up stirring plate under hood
+2.	Set 100 mL beaker with 50 ml of DEPC water stirring
+3.	Add reagents slowly to stirring liquid
+4.	Transfer dispersion buffer to labeled storage buffer tube
+5.	Store at 4°C protected from light, this buffer will be good for several days to a week.
+
+##Extraction protocol
+
+* Set a refrigerated centrifuge to 4° C
+* Set heat block to 55° C
+
+1. Prepare dispersion buffer (recipe at the end of this protocol) which can be kept in the 4°C refrigerator in a foil wrapped tube protected from light for several days to a week
+2. Scrape tissue from coral fragment (tissue from 1-2 polyps is plenty) and place into a 2mL add 1 mL of TRIzol reagent to the tube, let sit for at least 5- 10 minutes but can refrigerator or freeze the tissue in TRIzol as well if doing the extractions later
+3. Centrifuge the tubes at 20,000 x g for 5 minutes. Carefully decant the TRIzol and leave tubes open and under the hood to evaporate some of the TRIzol, or transfer tissue to a new tube
+4. To each tube add .2mL (~.075 g) of 0.5mm glass beads
+5. Make an extraction buffer master mix
+
+
+
+
