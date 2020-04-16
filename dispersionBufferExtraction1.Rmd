@@ -1,4 +1,3 @@
-
 ---
 title: "*Montastraea cavernosa* DNA extraction with dispersion buffer"
 author: "Alexis Sturm -- lexie.sturm@gmail.com"
@@ -23,6 +22,7 @@ if (!require("pacman")) install.packages("pacman")
 
 pacman::p_load(kableExtra)
 
+dispBuffMM=read.csv("dispersionBufferMM.csv")
 
 ```
 #### version: `r Sys.Date() %>% format(format="%B %d, %Y")`
@@ -56,11 +56,79 @@ Sodium citrate dihydrate: 0.441 g <br>
 * Set heat block to 55° C
 
 1. Prepare dispersion buffer (recipe at the end of this protocol) which can be kept in the 4°C refrigerator in a foil wrapped tube protected from light for several days to a week
+
 2. Scrape tissue from coral fragment (tissue from 1-2 polyps is plenty) and place into a 2mL add 1 mL of TRIzol reagent to the tube, let sit for at least 5- 10 minutes but can refrigerator or freeze the tissue in TRIzol as well if doing the extractions later
+
 3. Centrifuge the tubes at 20,000 x g for 5 minutes. Carefully decant the TRIzol and leave tubes open and under the hood to evaporate some of the TRIzol, or transfer tissue to a new tube
+
 4. To each tube add .2mL (~.075 g) of 0.5mm glass beads
+
 5. Make an extraction buffer master mix
 
+```{r, dispBuffMM}
+kable(dispBuffMM, col.names = (c("Reagent","Volume (uL)", "Master mix for 24 samples \n(+10% error)"))) %>%
+  kable_styling(bootstrap_options = c("condensed", "hover","striped"), full_width = FALSE, 
+                position = 'left')
+```
+6.	Add 811 µL of the extraction buffer master mix to each tube
 
+7.	Wrap the top of each tube with parafilm to prevent leakage, invert to mix tubes
 
+8.	Bead beat for 2 – 3 mins (6 M/s, three 45 sec intervals w/ 2 min cool down between)
 
+9.	Incubate at 55°C for 1.5 hours while mixing
+
+10.	Add 800µL phenol:chloroform:isoamyl  alcohol (25:24:1). Do this in the hood and remember to pipette from the bottom layer, place samples on ice
+
+11.	Vortex samples for a few seconds and leave on ice for 1 minute. Vortex samples again for 1-2 seconds. You want to make sure the two phases are homogenized, sometimes it is necessary to shake the tubes before vortexing
+
+12.	Centrifuge at 20,000 x g for 15 mins at 4°C
+
+13.	Transfer aqueous phase to new tube (~600-700 µL), taking care not to disturb interphase layer. Only get as much as you can w/o disturbing the interphase layer
+
+14.	Add 600µL chloroform:isoamyl  alcohol (24:1), place samples on ice. Repeat step 11
+
+15.	Mix and centrifuge at 20,000 x g for 15 mins at 4°C
+
+16.	 Transfer aqueous phase to new tube (~500-600 µL), taking care not to disturb interphase layer which should be non-existent or much thinner. Only get as much as you can w/o disturbing the interphase layer
+
+17.	Add 800µL 100% isopropanol, invert samples to mix 25-30 times
+
+18.	Centrifuge at 20,000 x g for 30 mins at 4°C to pellet the DNA
+
+19.	Carefully pour off supernatant
+
+20.	Add 1000µL of 70% EtOH @ room temperature. Gently wash EtOH around tube and invert to mix.
+
+21.	Centrifuge at 20,000 x g for 10 mins at 4°C
+
+22.	Remove supernatant (carefully pour off, quick spin the samples, and pipette off the remaining fluid avoiding pellet)
+
+23.	Dry for 15 mins upside down on a kimwipe at room temperature for 15 minute
+
+24.	Elute in 100 uL of NFW
+
+25.	Incubate at 55°C for 10 min
+
+26.	Purify DNA extractions using the Zymo Clean and Concentrate Kit according to manufacturer’s protocol or following the protocol attached here
+
+##Cleaning genomic DNA with Zymo Clean & Concentrator-5 Kit
+After extracting genomic DNA, Zymo DNA Clean & Concentrator-5 (D4014) is used to clean DNA and remove inhibitors prior to running PCR, this protocol has a few slight modifications from the manufacturer’s protocol.
+
+1. Set NFW for elution step in heat block at 65° C
+
+2. Add to your eluted DNA a 2:1 volume of Binding Buffer:DNA (in this case 200µL) and vortex thoroughly, spin down.
+
+3. Transfer the entire mixture (~300 uL) to a provided Zymo-Spin Column in a collection tube.
+
+4. Centrifuge 16,000 x g for 2 minutes at room temperature. Discard flow through.
+* Check to make sure all of the solution has passed through the filter, if not then spin the filter column again. Issues with getting binding buffer to pass through the filter suggests that there may be too much DNA for the filter and it is getting clogged. If this is happening for a lot of your samples, consider scraping less tissue in the beginning of the protocol, or consider switching to a larger filter column set-up, which Zymo has available.
+
+5. Add 200 μL DNA Wash Buffer to the column. Centrifuge at 16,000 x g for 1 min at room temperature. Repeat.
+
+6. Transfer the column to a new labeled 1.5 mL tube. Elute by adding 15-20 µL of heated NFW directly to the column matrix and incubate at room temperature for 3–5 min. Centrifuge for 2 min to elute DNA.
+* Ensure the DNA has completely eluted before discarding the column, if there is too much DNA you may have to spin the column twice to ensure you have all of the sample.
+
+7. Nanodrop cleaned DNA, if 260/280 values are <1.8 and 260/230 values are <~2.0 then re-clean and elute in a smaller volume (~8 uL).
+
+8. Quantify via picogreen or Qubit
