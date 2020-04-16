@@ -1,7 +1,7 @@
 ---
 title: "*Montastraea cavernosa* DNA extraction with dispersion buffer"
 author: "Alexis Sturm -- lexie.sturm@gmail.com"
-date: "4/10/2020"
+date: "4/16/2020"
 output:
   html_document:
     theme: paper
@@ -122,13 +122,14 @@ After extracting genomic DNA, Zymo DNA Clean & Concentrator-5 (D4014) is used to
 3. Transfer the entire mixture (~300 uL) to a provided Zymo-Spin Column in a collection tube.
 
 4. Centrifuge 16,000 x g for 2 minutes at room temperature. Discard flow through.
-* Check to make sure all of the solution has passed through the filter, if not then spin the filter column again. Issues with getting binding buffer to pass through the filter suggests that there may be too much DNA for the filter and it is getting clogged. If this is happening for a lot of your samples, consider scraping less tissue in the beginning of the protocol, or consider switching to a larger filter column set-up, which Zymo has available.
+    + Check to make sure all of the solution has passed through the filter, if not then spin the filter column again. Issues with getting binding buffer to pass through the filter suggests that there may be too much DNA for the filter and it is getting clogged. If this is happening for a lot of your samples, consider scraping less tissue in the beginning of the protocol, or consider switching to a larger filter column set-up, which Zymo has available.<br/>
+<br/>
 
 5. Add 200 μL DNA Wash Buffer to the column. Centrifuge at 16,000 x g for 1 min at room temperature. Repeat.
 
 6. Transfer the column to a new labeled 1.5 mL tube. Elute by adding 15-20 µL of heated NFW directly to the column matrix and incubate at room temperature for 3–5 min. Centrifuge for 2 min to elute DNA.
-* Ensure the DNA has completely eluted before discarding the column, if there is too much DNA you may have to spin the column twice to ensure you have all of the sample.
-
+    + Ensure the DNA has completely eluted before discarding the column, if there is too much DNA you may have to spin the column twice to ensure you have all of the sample.<br/>
+<br/>
 7. Nanodrop cleaned DNA, if 260/280 values are <1.8 and 260/230 values are <~2.0 then re-clean and elute in a smaller volume (~8 uL).
 
 8. Quantify via picogreen or Qubit
