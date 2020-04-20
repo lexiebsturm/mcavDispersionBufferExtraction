@@ -31,7 +31,7 @@ dispBuffMM=read.csv("dispersionBufferMM.csv")
 #About this protocol
 We have found that this protocol works to extract high quantities and quality of DNA from *Montastraea cavernosa* tissue preserved in 100% molecular grade ethanol. A brief soak of the tissue scrape in TRIzol reagent appears to get rid of inhibitors and greatly improves DNA quality and downstream PCR amplification. This extraction protocol is relatively time consuming but may work well for people who are having trouble with their extractions (especially with pigmented pellets, poor downstream digestions, or amplification).
 
-This protocol is a Frakenstein mash-up of protocols published by [Ryan Eckert](https://ryaneckert.github.io/Belize_Mcav_Symbiodiniaceae_ITS2/lab_protocol/), which was modified from [Mieog et al. (2009)](https://doi.org/10.1111/j.1755-0998.2008.02222.x){target="_blank"} and [http://ccb.ucr.edu/lab_protocols.html](http://ccb.ucr.edu/lab_protocols.html){target="_blank"}, and protocols published by [Misha Matz](https://github.com/z0on/2bRAD_denovo).
+This protocol is a Frakenstein mash-up of protocols published by [Ryan Eckert](https://ryaneckert.github.io/Belize_Mcav_Symbiodiniaceae_ITS2/lab_protocol/){target="_blank"}, which was modified from [Mieog et al. (2009)](https://doi.org/10.1111/j.1755-0998.2008.02222.x){target="_blank"} and [http://ccb.ucr.edu/lab_protocols.html](http://ccb.ucr.edu/lab_protocols.html){target="_blank"}, and protocols published by [Misha Matz](https://github.com/z0on/2bRAD_denovo).
 
 ***
 #DNA extraction with dispersion buffer
